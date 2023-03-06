@@ -146,3 +146,41 @@ plot_value_array(1, predictions_single[0], test_labels)
 _ = plt.xticks(range(10), class_names, rotation=45)
 plt.show()
 np.argmax(predictions_single[0])
+
+# Trained with Ryzen 9 5950X, 64GB RAM, RTX 3060 Ventus 3x OC, Windows 11 Pro, Python 3.9.7, TensorFlow
+#
+# results:
+#
+# 2.11.0
+# 2023-03-05 23:00:31.381273: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+# To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+# Epoch 1/10
+# 1875/1875 [==============================] - 2s 990us/step - loss: 0.4952 - accuracy: 0.8247
+# Epoch 2/10
+# 1875/1875 [==============================] - 2s 907us/step - loss: 0.3758 - accuracy: 0.8652
+# Epoch 3/10
+# 1875/1875 [==============================] - 2s 900us/step - loss: 0.3358 - accuracy: 0.8780
+# Epoch 4/10
+# 1875/1875 [==============================] - 2s 891us/step - loss: 0.3136 - accuracy: 0.8858
+# Epoch 5/10
+# 1875/1875 [==============================] - 2s 890us/step - loss: 0.2961 - accuracy: 0.8913
+# Epoch 6/10
+# 1875/1875 [==============================] - 2s 886us/step - loss: 0.2806 - accuracy: 0.8948
+# Epoch 7/10
+# 1875/1875 [==============================] - 2s 886us/step - loss: 0.2691 - accuracy: 0.9001
+# Epoch 8/10
+# 1875/1875 [==============================] - 2s 883us/step - loss: 0.2584 - accuracy: 0.9045
+# Epoch 9/10
+# 1875/1875 [==============================] - 2s 877us/step - loss: 0.2470 - accuracy: 0.9076
+# Epoch 10/10
+# 1875/1875 [==============================] - 2s 883us/step - loss: 0.2394 - accuracy: 0.9113
+# 313/313 - 0s - loss: 0.3655 - accuracy: 0.8747 - 238ms/epoch - 760us/step
+# 
+# Test accuracy: 0.8747000098228455
+# 313/313 [==============================] - 0s 496us/step
+# (28, 28)
+# (1, 28, 28)
+# 1/1 [==============================] - 0s 11ms/step
+# [[4.7043734e-05 3.4456119e-13 9.9819142e-01 1.5880787e-10 3.6941661e-04
+#   5.8762386e-13 1.3921025e-03 1.3269940e-20 3.4339059e-10 1.0994147e-15]]
+# 
