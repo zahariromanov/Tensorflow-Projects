@@ -208,3 +208,106 @@ examples = [
 ]
 
 export_model.predict(examples)
+
+
+# results generated below , ran on Ryzen 9 5950x, 64GB RAM, RTX 3090 Ventus 3X OC 12GB, Samsung 980 Pro 1TB NVMe SSD, Windows 11 Pro x64
+
+'''
+2.11.0
+Downloading data from https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+84125825/84125825 [==============================] - 4s 0us/step
+Rachel Griffiths writes and directs this award winning short film. A heartwarming story about coping with grief and cherishing the memory of those we've loved and lost. Although, only 15 minutes long, Griffiths manages to capture so much emotion and truth onto film in the short space of time. Bud Tingwell gives a touching performance as Will, a widower struggling to cope with his wife's death. Will is confronted by the harsh reality of loneliness and helplessness as he proceeds to take care of Ruth's pet cow, Tulip. The film displays the grief and responsibility one feels for those they have loved and lost. Good cinematography, great direction, and superbly acted. It will bring tears to all those who have lost a loved one, and survived.
+Found 25000 files belonging to 2 classes.
+Using 20000 files for training.
+2023-03-07 16:00:01.210756: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Review b'"Pandemonium" is a horror movie spoof that comes off more stupid than funny. Believe me when I tell you, I love comedies. Especially comedy spoofs. "Airplane", "The Naked Gun" trilogy, "Blazing Saddles", "High Anxiety", and "Spaceballs" are some of my favorite comedies that spoof a particular genre. "Pandemonium" is not up there with those films. Most of the scenes in this movie had me sitting there in stunned silence because the movie wasn\'t all that funny. There are a few laughs in the film, but when you watch a comedy, you expect to laugh a lot more than a few times and that\'s all this film has going for it. Geez, "Scream" had more laughs than this film and that was more of a horror film. How bizarre is that?<br /><br />*1/2 (out of four)'
+Label 0
+Review b"David Mamet is a very interesting and a very un-equal director. His first movie 'House of Games' was the one I liked best, and it set a series of films with characters whose perspective of life changes as they get into complicated situations, and so does the perspective of the viewer.<br /><br />So is 'Homicide' which from the title tries to set the mind of the viewer to the usual crime drama. The principal characters are two cops, one Jewish and one Irish who deal with a racially charged area. The murder of an old Jewish shop owner who proves to be an ancient veteran of the Israeli Independence war triggers the Jewish identity in the mind and heart of the Jewish detective.<br /><br />This is were the flaws of the film are the more obvious. The process of awakening is theatrical and hard to believe, the group of Jewish militants is operatic, and the way the detective eventually walks to the final violent confrontation is pathetic. The end of the film itself is Mamet-like smart, but disappoints from a human emotional perspective.<br /><br />Joe Mantegna and William Macy give strong performances, but the flaws of the story are too evident to be easily compensated."
+Label 0
+Review b'Great documentary about the lives of NY firefighters during the worst terrorist attack of all time.. That reason alone is why this should be a must see collectors item.. What shocked me was not only the attacks, but the"High Fat Diet" and physical appearance of some of these firefighters. I think a lot of Doctors would agree with me that,in the physical shape they were in, some of these firefighters would NOT of made it to the 79th floor carrying over 60 lbs of gear. Having said that i now have a greater respect for firefighters and i realize becoming a firefighter is a life altering job. The French have a history of making great documentary\'s and that is what this is, a Great Documentary.....'
+Label 1
+Label 0 corresponds to neg
+Label 1 corresponds to pos
+Found 25000 files belonging to 2 classes.
+Using 5000 files for validation.
+Found 25000 files belonging to 2 classes.
+WARNING:tensorflow:From D:\Repos\.venv\lib\site-packages\tensorflow\python\autograph\pyct\static_analysis\liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
+Review tf.Tensor(b'Great movie - especially the music - Etta James - "At Last". This speaks volumes when you have finally found that special someone.', shape=(), dtype=string)
+Label neg
+Vectorized review (<tf.Tensor: shape=(1, 250), dtype=int64, numpy=
+array([[  86,   17,  260,    2,  222,    1,  571,   31,  229,   11, 2418,
+           1,   51,   22,   25,  404,  251,   12,  306,  282,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0]], dtype=int64)>, <tf.Tensor: shape=(), dtype=int32, numpy=0>)
+1287 --->  silent
+ 313 --->  night
+Vocabulary size: 10000
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ embedding (Embedding)       (None, None, 16)          160016
+
+ dropout (Dropout)           (None, None, 16)          0
+
+ global_average_pooling1d (G  (None, 16)               0
+ lobalAveragePooling1D)
+
+ dropout_1 (Dropout)         (None, 16)                0
+
+ dense (Dense)               (None, 1)                 17
+
+=================================================================
+Total params: 160,033
+Trainable params: 160,033
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+625/625 [==============================] - 6s 9ms/step - loss: 0.6650 - binary_accuracy: 0.6928 - val_loss: 0.6152 - val_binary_accuracy: 0.7714
+Epoch 2/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.5485 - binary_accuracy: 0.8002 - val_loss: 0.4976 - val_binary_accuracy: 0.8222
+Epoch 3/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.4443 - binary_accuracy: 0.8461 - val_loss: 0.4197 - val_binary_accuracy: 0.8476
+Epoch 4/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.3768 - binary_accuracy: 0.8654 - val_loss: 0.3735 - val_binary_accuracy: 0.8614
+Epoch 5/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.3357 - binary_accuracy: 0.8774 - val_loss: 0.3447 - val_binary_accuracy: 0.8664
+Epoch 6/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.3043 - binary_accuracy: 0.8881 - val_loss: 0.3261 - val_binary_accuracy: 0.8710
+Epoch 7/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.2816 - binary_accuracy: 0.8979 - val_loss: 0.3131 - val_binary_accuracy: 0.8730
+Epoch 8/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.2622 - binary_accuracy: 0.9046 - val_loss: 0.3035 - val_binary_accuracy: 0.8758
+Epoch 9/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.2459 - binary_accuracy: 0.9093 - val_loss: 0.2969 - val_binary_accuracy: 0.8780
+Epoch 10/10
+625/625 [==============================] - 1s 2ms/step - loss: 0.2334 - binary_accuracy: 0.9147 - val_loss: 0.2920 - val_binary_accuracy: 0.8790
+782/782 [==============================] - 11s 13ms/step - loss: 0.3102 - binary_accuracy: 0.8733
+Loss:  0.31018194556236267
+Accuracy:  0.8733199834823608
+782/782 [==============================] - 3s 4ms/step - loss: 0.3102 - accuracy: 0.8733
+0.8733199834823608
+1/1 [==============================] - 0s 113ms/step
+'''
