@@ -215,12 +215,10 @@ export_model.predict(examples)
 
 '''
 2.11.0
-Downloading data from https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
-84125825/84125825 [==============================] - 4s 0us/step
 Rachel Griffiths writes and directs this award winning short film. A heartwarming story about coping with grief and cherishing the memory of those we've loved and lost. Although, only 15 minutes long, Griffiths manages to capture so much emotion and truth onto film in the short space of time. Bud Tingwell gives a touching performance as Will, a widower struggling to cope with his wife's death. Will is confronted by the harsh reality of loneliness and helplessness as he proceeds to take care of Ruth's pet cow, Tulip. The film displays the grief and responsibility one feels for those they have loved and lost. Good cinematography, great direction, and superbly acted. It will bring tears to all those who have lost a loved one, and survived.
 Found 25000 files belonging to 2 classes.
 Using 20000 files for training.
-2023-03-07 16:00:01.210756: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+2023-03-07 16:30:35.751606: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
 Review b'"Pandemonium" is a horror movie spoof that comes off more stupid than funny. Believe me when I tell you, I love comedies. Especially comedy spoofs. "Airplane", "The Naked Gun" trilogy, "Blazing Saddles", "High Anxiety", and "Spaceballs" are some of my favorite comedies that spoof a particular genre. "Pandemonium" is not up there with those films. Most of the scenes in this movie had me sitting there in stunned silence because the movie wasn\'t all that funny. There are a few laughs in the film, but when you watch a comedy, you expect to laugh a lot more than a few times and that\'s all this film has going for it. Geez, "Scream" had more laughs than this film and that was more of a horror film. How bizarre is that?<br /><br />*1/2 (out of four)'
 Label 0
@@ -286,29 +284,29 @@ Trainable params: 160,033
 Non-trainable params: 0
 _________________________________________________________________
 Epoch 1/10
-625/625 [==============================] - 6s 9ms/step - loss: 0.6650 - binary_accuracy: 0.6928 - val_loss: 0.6152 - val_binary_accuracy: 0.7714
+625/625 [==============================] - 6s 9ms/step - loss: 0.6652 - binary_accuracy: 0.6896 - val_loss: 0.6169 - val_binary_accuracy: 0.7716
 Epoch 2/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.5485 - binary_accuracy: 0.8002 - val_loss: 0.4976 - val_binary_accuracy: 0.8222
+625/625 [==============================] - 1s 2ms/step - loss: 0.5498 - binary_accuracy: 0.8001 - val_loss: 0.4995 - val_binary_accuracy: 0.8226
 Epoch 3/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.4443 - binary_accuracy: 0.8461 - val_loss: 0.4197 - val_binary_accuracy: 0.8476
+625/625 [==============================] - 1s 2ms/step - loss: 0.4459 - binary_accuracy: 0.8443 - val_loss: 0.4208 - val_binary_accuracy: 0.8466
 Epoch 4/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.3768 - binary_accuracy: 0.8654 - val_loss: 0.3735 - val_binary_accuracy: 0.8614
+625/625 [==============================] - 1s 2ms/step - loss: 0.3797 - binary_accuracy: 0.8666 - val_loss: 0.3741 - val_binary_accuracy: 0.8616
 Epoch 5/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.3357 - binary_accuracy: 0.8774 - val_loss: 0.3447 - val_binary_accuracy: 0.8664
+625/625 [==============================] - 1s 2ms/step - loss: 0.3366 - binary_accuracy: 0.8786 - val_loss: 0.3453 - val_binary_accuracy: 0.8672
 Epoch 6/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.3043 - binary_accuracy: 0.8881 - val_loss: 0.3261 - val_binary_accuracy: 0.8710
+625/625 [==============================] - 1s 2ms/step - loss: 0.3055 - binary_accuracy: 0.8887 - val_loss: 0.3263 - val_binary_accuracy: 0.8716
 Epoch 7/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2816 - binary_accuracy: 0.8979 - val_loss: 0.3131 - val_binary_accuracy: 0.8730
+625/625 [==============================] - 1s 2ms/step - loss: 0.2818 - binary_accuracy: 0.8978 - val_loss: 0.3126 - val_binary_accuracy: 0.8744
 Epoch 8/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2622 - binary_accuracy: 0.9046 - val_loss: 0.3035 - val_binary_accuracy: 0.8758
+625/625 [==============================] - 1s 2ms/step - loss: 0.2621 - binary_accuracy: 0.9046 - val_loss: 0.3033 - val_binary_accuracy: 0.8762
 Epoch 9/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2459 - binary_accuracy: 0.9093 - val_loss: 0.2969 - val_binary_accuracy: 0.8780
+625/625 [==============================] - 1s 2ms/step - loss: 0.2465 - binary_accuracy: 0.9099 - val_loss: 0.2965 - val_binary_accuracy: 0.8778
 Epoch 10/10
-625/625 [==============================] - 1s 2ms/step - loss: 0.2334 - binary_accuracy: 0.9147 - val_loss: 0.2920 - val_binary_accuracy: 0.8790
-782/782 [==============================] - 11s 13ms/step - loss: 0.3102 - binary_accuracy: 0.8733
-Loss:  0.31018194556236267
-Accuracy:  0.8733199834823608
-782/782 [==============================] - 3s 4ms/step - loss: 0.3102 - accuracy: 0.8733
-0.8733199834823608
-1/1 [==============================] - 0s 113ms/step
+625/625 [==============================] - 1s 2ms/step - loss: 0.2312 - binary_accuracy: 0.9168 - val_loss: 0.2919 - val_binary_accuracy: 0.8788
+782/782 [==============================] - 10s 13ms/step - loss: 0.3106 - binary_accuracy: 0.8725
+Loss:  0.31061065196990967
+Accuracy:  0.8724799752235413
+782/782 [==============================] - 4s 4ms/step - loss: 0.3106 - accuracy: 0.8725
+0.8724799752235413
+1/1 [==============================] - 0s 79ms/step
 '''
