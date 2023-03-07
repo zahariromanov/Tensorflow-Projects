@@ -48,7 +48,7 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.Dense(10)
 ])
-model.compile(optimizer='adamax',
+model.compile(optimizer='Adamax',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
 model.fit(train_images, train_labels, epochs=10)
