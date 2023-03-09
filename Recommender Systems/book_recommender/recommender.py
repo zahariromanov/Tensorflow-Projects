@@ -1,7 +1,7 @@
 import pandas as pd
 from surprise import Reader
 
-book_ratings = pd.read_csv(r'Tensorflow-Projects\Reccomender Engines\book_reccomender\ratedata.csv')
+book_ratings = pd.read_csv(r'Tensorflow-Projects\Recommender Systems\book_recommender\ratedata.csv')
 print(book_ratings.head())
 
 #1. Print dataset size and examine column data types
