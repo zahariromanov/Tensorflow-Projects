@@ -25,9 +25,9 @@ rec_data = Dataset.load_from_df(book_ratings[['user_id',
                                               'rating']],
                                 reader)
 
-#6. Create a 80:20 train-test split and set the random state to 7
+#6. Create a 80:20 train-test split and set the random state from 7 to none to randomize train and test sets
 from surprise.model_selection import train_test_split
-trainset, testset = train_test_split(rec_data, test_size=.2, random_state=7)
+trainset, testset = train_test_split(rec_data, test_size=.2, random_state=None)
 
 #7. Use KNNBasice from Surprise to train a collaborative filter
 from surprise import KNNBasic
