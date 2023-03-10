@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report
 from tensorflow.keras.utils import to_categorical
 import numpy as np
 
-hf = pd.read_csv('Tensorflow-Projects\Basic Classification\heart_failure\heart_failure.csv')
+hf = pd.read_csv('Tensorflow-Projects\Basic Classification\Text Classification\heart_failure\heart_failure.csv')
 print(hf.info())
 
 print('Classes and number of values in the dataset' ,Counter(hf['death_event']))
