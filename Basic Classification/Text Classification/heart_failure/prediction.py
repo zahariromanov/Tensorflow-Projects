@@ -1,4 +1,5 @@
 import pandas as pd
+import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
 from collections import Counter
@@ -13,7 +14,9 @@ import numpy as np
 hf = pd.read_csv('Tensorflow-Projects\Basic Classification\Text Classification\heart_failure\heart_failure.csv')
 print(hf.info())
 
+
 print('Classes and number of values in the dataset' ,Counter(hf['death_event']))
+print(hf)
 
 y = hf['death_event']
 x = hf[['age','anaemia','creatinine_phosphokinase','diabetes','ejection_fraction','high_blood_pressure','platelets','serum_creatinine','serum_sodium','sex','smoking','time']]

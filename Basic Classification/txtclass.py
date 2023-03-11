@@ -139,7 +139,7 @@ model.compile(loss=losses.BinaryCrossentropy(from_logits=True),
 
 # Train the model
 
-epochs = 10
+epochs = 60000
 history = model.fit(
     train_ds,
     validation_data=val_ds,
